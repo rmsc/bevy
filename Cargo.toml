@@ -84,6 +84,7 @@ anyhow = "1.0"
 rand = "0.8.0"
 ron = "0.6.2"
 serde = {version = "1", features = ["derive"]}
+image = "0.23.12"
 
 [[example]]
 name = "hello_world"
@@ -132,6 +133,10 @@ path = "examples/3d/parenting.rs"
 [[example]]
 name = "spawner"
 path = "examples/3d/spawner.rs"
+
+[[example]]
+name = "render_to_file"
+path = "examples/3d/render_to_file.rs"
 
 [[example]]
 name = "texture"
