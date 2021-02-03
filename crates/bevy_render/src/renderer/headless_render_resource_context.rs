@@ -147,6 +147,10 @@ impl RenderResourceContext for HeadlessRenderResourceContext {
         self.buffer_info.read().get(&buffer).cloned()
     }
 
+    fn get_texture_descriptor(&self, texture: TextureId) -> Option<TextureDescriptor> {
+        self.texture_descriptors.read().get(&texture).cloned()
+    }
+
     fn bind_group_descriptor_exists(
         &self,
         _bind_group_descriptor_id: BindGroupDescriptorId,

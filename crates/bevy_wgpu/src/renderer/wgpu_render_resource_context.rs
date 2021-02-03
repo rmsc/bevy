@@ -605,6 +605,14 @@ impl RenderResourceContext for WgpuRenderResourceContext {
         self.resources.buffer_infos.read().get(&buffer).cloned()
     }
 
+    fn get_texture_descriptor(&self, texture: TextureId) -> Option<TextureDescriptor> {
+        self.resources
+            .texture_descriptors
+            .read()
+            .get(&texture)
+            .cloned()
+    }
+
     fn write_mapped_buffer(
         &self,
         id: BufferId,
