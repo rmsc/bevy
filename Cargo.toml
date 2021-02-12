@@ -370,6 +370,10 @@ name = "multiple_windows"
 path = "examples/window/multiple_windows.rs"
 
 [[example]]
+name = "overlapping_viewports"
+path = "examples/window/overlapping_viewports.rs"
+
+[[example]]
 name = "scale_factor_override"
 path = "examples/window/scale_factor_override.rs"
 
