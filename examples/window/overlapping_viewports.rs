@@ -72,6 +72,9 @@ fn setup(
                     top: SideLocation::Relative(0.65),
                     bottom: SideLocation::Relative(0.9),
                 },
+                // this will treat the overlapping viewport as if it is
+                // a flat plane at depth zero, so above everything else
+                depth_range: 0.0..=0.0,
                 ..Default::default()
             }),
             transform: Transform::from_xyz(-2.0, 2.5, 5.0)
